@@ -1,0 +1,14 @@
+[book]
+authors = ["lnkkerst"]
+language = "zh"
+description = "lnkkerst's XCPC templates."
+multilingual = false
+src = "src"
+title = "XCPC Templates"
+
+[build]
+
+[output.html]
+additional-css = ["theme/custom/style.css"]
+mathjax-support = true
+playground = { line-numbers = true }
