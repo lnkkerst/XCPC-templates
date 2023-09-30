@@ -10,5 +10,9 @@ title = "XCPC Templates"
 
 [output.html]
 additional-css = ["theme/custom/style.css"]
-mathjax-support = true
+mathjax-support = false
 playground = { line-numbers = true }
+
+[preprocessor.katex]
+after = ["links"]
+no-css = true

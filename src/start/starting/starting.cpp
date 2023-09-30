@@ -2,9 +2,11 @@
 #include <algorithm>
 #include <array>
 #include <bitset>
+#include <deque>
 #include <functional>
 #include <iostream>
 #include <map>
+#include <numeric>
 #include <queue>
 #include <set>
 #include <unordered_map>
