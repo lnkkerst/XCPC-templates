@@ -19,6 +19,6 @@
 
 # 数据结构
 
-- [堆](base/heap/README.md)
+- [堆](ds/heap/README.md)
 - [ST 表](ds/st/README.md)
 - [并查集](ds/dsu/README.md)
