@@ -9,7 +9,7 @@
 ## 启发式合并
 
 ```cpp
-{{ #include union-by-rank.cpp:16:49 }}
+{{ #include union_by_rank.cpp:16:49 }}
 ```
 
 ## 删除与移动
@@ -24,7 +24,7 @@
 3. 查询元素所在集合大小和元素和。
 
 ```cpp
-{{ #include remove-and-move.cpp:16:85 }}
+{{ #include remove_and_move.cpp:16:85 }}
 ```
 
 <!-- TODO 带权并查集 -->
