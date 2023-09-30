@@ -13,5 +13,5 @@
 数据范围 $10^5$。
 
 ```cpp
-{{ #include kth-heap.cpp:14:55 }}
+{{ #include kth_heap.cpp:14:55 }}
 ```
