@@ -46,3 +46,24 @@
 ```cpp
 {{ #include mat_range.cpp:16:85 }}
 ```
+
+## 权值树状数组
+
+维护 $b[x]$ 为 $x$ 在 $a$ 中出现的次数，对 $b$ 建树状数组。
+
+单点修改，求 kth：
+
+```cpp
+// 权值树状数组查询第 k 小
+int kth(int k) {
+  int sum = 0, x = 0;
+  for (int i = log2(n); ~i; --i) {
+    x += 1 << i;                   // 尝试扩展
+    if (x >= n || sum + t[x] >= k) // 如果扩展失败
+      x -= 1 << i;
+    else
+      sum += t[x];
+  }
+  return x + 1;
+}
+```
