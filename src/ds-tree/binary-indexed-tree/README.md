@@ -11,10 +11,38 @@
 {{ #include simple.cpp:16:59 }}
 ```
 
-## 区间加，单点查询
+## 区间加，单点查询。
 
 维护差分数组即可。
 
 ```cpp
 {{ #include diff.cpp:16:63 }}
+```
+
+## 区间加，区间和。
+
+```cpp
+{{ #include range_add_query.cpp:16:80 }}
+```
+
+## 二维，子矩阵加，单点查询
+
+改一改就是单点修改，子矩阵查询了。
+
+[POJ-2155](http://poj.org/problem?id=2155)
+
+没有经过严格测试。
+
+```cpp
+{{ #include mat_simple.cpp:16:77 }}
+```
+
+## 二维，子矩阵加，子矩阵查询
+
+[POJ-2155](http://poj.org/problem?id=2155)
+
+没有经过严格测试。
+
+```cpp
+{{ #include mat_range.cpp:16:85 }}
 ```
