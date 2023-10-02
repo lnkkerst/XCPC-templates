@@ -30,3 +30,4 @@
 # 各种树
 
 - [树状数组](ds-tree/binary-indexed-tree/README.md)
+- [线段树](ds-tree/segment-tree/README.md)
