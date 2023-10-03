@@ -13,20 +13,23 @@ int rd() {
   int x = 0, f = 1;
   char c = gc();
   while (!isdigit(c)) {
-    if (c == '-')
+    if (c == '-') {
       f = -1;
+    }
     c = gc();
   }
-  while (isdigit(c))
+  while (isdigit(c)) {
     x = x * 10 + (c ^ 48), c = gc();
+  }
   return x * f;
 }
 
 char pbuf[1 << 20], *pp = pbuf;
 
 void push(const char &c) {
-  if (pp - pbuf == 1 << 20)
+  if (pp - pbuf == 1 << 20) {
     fwrite(pbuf, 1, 1 << 20, stdout), pp = pbuf;
+  }
   *pp++ = c;
 }
 
@@ -36,7 +39,8 @@ void write(int x) {
   do {
     sta[top++] = x % 10, x /= 10;
   } while (x);
-  while (top)
+  while (top) {
     push(sta[--top] + '0');
+  }
 }
 } // namespace IO
