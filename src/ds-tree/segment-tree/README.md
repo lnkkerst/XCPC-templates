@@ -34,3 +34,63 @@
 ```cpp
 {{ #include add_sum_dyno.cpp:18:146 }}
 ```
+
+## 线段树合并
+
+TODO 完善代码
+
+常用于权值线段树，动态开点
+
+```cpp
+int merge(int u, int v, int l, int r) {
+  if(!u) {
+    return v;
+  }
+  if(!v) {
+    return u;
+  }
+  if(u == v) {
+    sum[u] += sum[v];
+    return a;
+  }
+  int mid = ((r - l) >> 1) + l;
+  ls[u] = merge(ls[u], ls[v], l, mid);
+  rs[u] = merge(rs[u], rs[v], mid + 1, r);
+  pushup(u);
+  return u;
+}
+```
+
+## 线段树分裂
+
+TODO 完善代码
+
+只能用于有序的序列，常用于动态开点的权值线段树
+
+```cpp
+void split(int &u, int &v, int l, int r, int L, int R) {
+  if(l < L || r > R) {
+    return;
+  }
+  if(!u) {
+    return;
+  }
+  if(l >= L && r <= R) {
+    v = u;
+    u = 0;
+    return;
+  }
+  if(!q) {
+    q = newNode();
+  }
+  int mid = ((r - l) >> 1) + l;
+  if(L <= mid) {
+    split(ls[u], ls[v], l, mid, L, R);
+  }
+  if(R > mid) {
+    split(rs[u], rs[v], mid + 1, r, L, R);
+  }
+  pushup(u);
+  pushup(v);
+}
+```

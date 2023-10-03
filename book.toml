@@ -9,10 +9,19 @@ title = "XCPC Templates"
 [build]
 
 [output.html]
-additional-css = ["theme/custom/style.css"]
+additional-css = ["theme/custom/style.css", "theme/custom/mdbook-admonish.css"]
 mathjax-support = false
 playground = { line-numbers = true }
+additional-js = ["theme/custom/mermaid.min.js", "theme/custom/mermaid-init.js"]
 
 [preprocessor.katex]
 after = ["links"]
 no-css = true
+
+[preprocessor.admonish]
+after = ["links"]
+command = "mdbook-admonish"
+assets_version = "2.0.2"    # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
