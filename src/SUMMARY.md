@@ -34,3 +34,11 @@
 - [平衡树](ds-tree/bst/README.md)
   - [Treap](ds-tree/bst/treap/README.md)
   - [Splay](ds-tree/bst/splay/README.md)
+- [主席树](ds-tree/persistent-seg/README.md)
+
+---
+
+# 数论
+
+- [多项式](math/poly/README.md)
+  - [FFT](math/poly/fft/README.md)
