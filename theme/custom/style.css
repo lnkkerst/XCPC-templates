@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC');
-@import url('https://fastly.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono");
+@import url("https://fastly.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css");
 
 html {
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
+}
+
+:root {
+  --mono-font: "JetBrains Mono", "Source Code Pro", Consolas, "Ubuntu Mono",
+    Menlo, "DejaVu Sans Mono", monospace, monospace;
 }
