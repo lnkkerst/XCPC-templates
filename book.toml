@@ -9,10 +9,15 @@ title = "XCPC Templates"
 [build]
 
 [output.html]
-additional-css = ["theme/custom/style.css",  "./theme/custom/mdbook-admonish.css"]
+additional-css = [
+  "theme/custom/style.css",
+  "./theme/custom/mdbook-admonish.css",
+]
 additional-js = ["theme/custom/index.js"]
 mathjax-support = false
 playground = { line-numbers = true }
+git-repository-url = "https://github.com/lnkkerst/XCPC-templates"
+print = { page-break = false }
 
 [output.linkcheck]
 
@@ -23,7 +28,7 @@ no-css = true
 [preprocessor.admonish]
 after = ["links"]
 command = "mdbook-admonish"
-assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+assets_version = "3.0.2"    # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"

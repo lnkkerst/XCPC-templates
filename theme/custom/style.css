@@ -10,3 +10,18 @@ html {
   --mono-font: "JetBrains Mono", "Source Code Pro", Consolas, "Ubuntu Mono",
     Menlo, "DejaVu Sans Mono", monospace, monospace;
 }
+
+@media print {
+  div.page {
+    padding: 0;
+  }
+
+  pre,
+  code {
+    break-inside: auto;
+  }
+
+  .content > main {
+    max-width: none;
+  }
+}
