@@ -17,7 +17,7 @@ import type { RenderContext } from "./types/RenderContext";
 import type { Book } from "./types/Book";
 import type { BookItem } from "./types/BookItem";
 import { merge } from "lodash-es";
-import { Fragment } from "react/jsx-runtime";
+import { Fragment } from "react";
 
 type OutlineItem = {
   title: string;
