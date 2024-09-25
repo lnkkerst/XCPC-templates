@@ -4,7 +4,7 @@ language = "zh"
 description = "lnkkerst's XCPC templates."
 multilingual = false
 src = "src"
-title = "XCPC Templates"
+title = "lnkkerst's XCPC Templates"
 
 [build]
 
