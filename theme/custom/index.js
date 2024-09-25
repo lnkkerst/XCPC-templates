@@ -81,7 +81,12 @@ function addPDFDownloadButton() {
   const navRight = document.querySelector(".right-buttons");
   const el = document.createElement("div");
   el.innerHTML = /* HTML */ `
-    <a href="/output.pdf" title="Download PDF" aria-label="Download PDF">
+    <a
+      href="/output-toc.pdf"
+      target="_blank"
+      title="Download PDF"
+      aria-label="Download PDF"
+    >
       <i id="pdf-download-button" class="fa fa-book"></i>
     </a>
   `;
