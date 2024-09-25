@@ -3,7 +3,6 @@
 ./with-pdf.sh
 
 cd book/html
-cp ../pdf/output-toc.pdf .
 git init
 git config user.name "lnkkerst"
 git config user.email "lnkkerst04@gmail.com"

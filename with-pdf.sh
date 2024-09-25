@@ -3,6 +3,7 @@
 echo ":: Install dependencies..."
 cd ./mdbook-pdf
 bun i
+bunx playwright install chromium
 cd ..
 
 echo ":: Backup book.toml..."
@@ -11,8 +12,7 @@ cat >>book.toml <book-pdf.toml
 
 echo ":: Build..."
 mdbook build
-
-today=$(date +%Y%m%d)
+cp book/pdf/output-toc.pdf book/html
 
 echo ":: Restore book.toml..."
 mv book.toml.bak book.toml
