@@ -2,13 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono");
 @import url("https://fastly.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css");
 
+@font-face {
+  font-family: "Noto Sans Mono SC";
+  src: url("https://fastly.jsdelivr.net/gh/notofonts/noto-cjk@Sans2.004/Sans/Mono/NotoSansMonoCJKsc-Regular.otf");
+}
+
 html {
   font-family: "Noto Sans SC", sans-serif;
 }
 
 :root {
-  --mono-font: "JetBrains Mono", "Source Code Pro", Consolas, "Ubuntu Mono",
-    Menlo, "DejaVu Sans Mono", monospace, monospace;
+  --mono-font: "JetBrains Mono", "Source Code Pro", Consolas,
+    "Noto Sans Mono SC", "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace;
 }
 
 @media print {
