@@ -1,0 +1,3 @@
+[output.pdf]
+command = "./mdbook-pdf/index.tsx"
+print = {}
