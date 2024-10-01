@@ -48,3 +48,5 @@
 # 动态规划
 
 - [背包 DP](./dp/knapsack/README.md)
+- [DP 优化](./dp/opt/README.md)
+  - [四边形不等式优化](./dp/opt/quad/README.md)
