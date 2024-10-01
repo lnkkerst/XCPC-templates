@@ -30,3 +30,8 @@ html {
     max-width: none;
   }
 }
+
+h2 {
+  margin-block-start: 2.5rem;
+  margin-block-end: 1rem;
+}

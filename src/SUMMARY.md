@@ -42,3 +42,9 @@
 
 - [多项式](math/poly/README.md)
   - [FFT](math/poly/fft/README.md)
+
+---
+
+# 动态规划
+
+- [背包 DP](./dp/knapsack/README.md)
