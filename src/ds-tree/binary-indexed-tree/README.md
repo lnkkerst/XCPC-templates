@@ -22,7 +22,7 @@
 ## 区间加，区间和。
 
 ```cpp
-{{ #include range_add_query.cpp:16:80 }}
+{{ #include range_add_query.cpp:16:82 }}
 ```
 
 ## 二维，子矩阵加，单点查询
@@ -34,7 +34,7 @@
 没有经过严格测试。
 
 ```cpp
-{{ #include mat_simple.cpp:16:77 }}
+{{ #include mat_simple.cpp:16:79 }}
 ```
 
 ## 二维，子矩阵加，子矩阵查询
@@ -44,7 +44,7 @@
 没有经过严格测试。
 
 ```cpp
-{{ #include mat_range.cpp:16:85 }}
+{{ #include mat_range.cpp:16:87 }}
 ```
 
 ## 权值树状数组

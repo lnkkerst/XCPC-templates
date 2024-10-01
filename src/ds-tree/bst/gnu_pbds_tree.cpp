@@ -8,7 +8,7 @@ using namespace __gnu_pbds;
 #define int long long
 
 tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
-    a;
+  a;
 
 signed main() {
   int n;

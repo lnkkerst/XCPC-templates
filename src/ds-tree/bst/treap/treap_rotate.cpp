@@ -22,11 +22,13 @@ struct Treap {
   int tot = 0, rt = 0;
   int notFound;
 
-  Treap(int _n, int _notFound = (1u << 31) - 1) : notFound(_notFound) {
+  Treap(int _n, int _notFound = (1u << 31) - 1): notFound(_notFound) {
     ls = rs = a = p = sz = cnt = vector<int>(_n + 10);
   }
 
-  void pushup(int u) { sz[u] = sz[ls[u]] + sz[rs[u]] + cnt[u]; }
+  void pushup(int u) {
+    sz[u] = sz[ls[u]] + sz[rs[u]] + cnt[u];
+  }
 
   void rotateL(int &u) {
     int t = rs[u];
@@ -76,7 +78,9 @@ struct Treap {
     }
   }
 
-  void insert(int x) { return insert(rt, x); }
+  void insert(int x) {
+    return insert(rt, x);
+  }
 
   bool remove(int &u, int x) {
     if (!u) {
@@ -113,7 +117,9 @@ struct Treap {
     }
   }
 
-  bool remove(int x) { return remove(rt, x); }
+  bool remove(int x) {
+    return remove(rt, x);
+  }
 
   int queryRank(int u, int x) {
     if (!u) {
@@ -128,7 +134,9 @@ struct Treap {
     }
   }
 
-  int queryRank(int x) { return queryRank(rt, x); }
+  int queryRank(int x) {
+    return queryRank(rt, x);
+  }
 
   int queryByRank(int u, int x) {
     if (!u) {
@@ -143,7 +151,9 @@ struct Treap {
     }
   }
 
-  auto queryByRank(int x) { return queryByRank(rt, x); }
+  auto queryByRank(int x) {
+    return queryByRank(rt, x);
+  }
 
   int queryPrev(int u, int x) {
     int res = notFound;
@@ -158,7 +168,9 @@ struct Treap {
     return res;
   }
 
-  auto queryPrev(int x) { return queryPrev(rt, x); }
+  auto queryPrev(int x) {
+    return queryPrev(rt, x);
+  }
 
   int queryNext(int u, int x) {
     int res = notFound;
@@ -173,7 +185,9 @@ struct Treap {
     return res;
   }
 
-  auto queryNext(int x) { return queryNext(rt, x); }
+  auto queryNext(int x) {
+    return queryNext(rt, x);
+  }
 };
 
 void solve() {

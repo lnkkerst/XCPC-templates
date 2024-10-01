@@ -27,7 +27,9 @@ private:
   int n;
   vector<int> sum, mu, tag;
 
-  void pushup(int u) { sum[u] = (sum[ls] + sum[rs]) % mod; }
+  void pushup(int u) {
+    sum[u] = (sum[ls] + sum[rs]) % mod;
+  }
 
   void pushdown(int l, int r, int u) {
     if (mu[u] != 1) {
@@ -115,15 +117,25 @@ private:
   }
 
 public:
-  Tree(int _n) : n(_n) { sum = mu = tag = vector<int>((_n + 2) * 4); }
+  Tree(int _n): n(_n) {
+    sum = mu = tag = vector<int>((_n + 2) * 4);
+  }
 
-  void add(int l, int r, int x) { return add(1, n, l, r, x, 1); }
+  void add(int l, int r, int x) {
+    return add(1, n, l, r, x, 1);
+  }
 
-  void mul(int l, int r, int x) { return mul(1, n, l, r, x, 1); }
+  void mul(int l, int r, int x) {
+    return mul(1, n, l, r, x, 1);
+  }
 
-  int query(int l, int r) { return query(1, n, l, r, 1); }
+  int query(int l, int r) {
+    return query(1, n, l, r, 1);
+  }
 
-  void build(const vector<int> &a) { build(a, 1, n, 1); }
+  void build(const vector<int> &a) {
+    build(a, 1, n, 1);
+  }
 
 #undef ls
 #undef rs

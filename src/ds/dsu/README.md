@@ -3,7 +3,7 @@
 ## 简单版本
 
 ```cpp
-{{ #include simple.cpp:14:39 }}
+{{ #include simple.cpp:14:41 }}
 ```
 
 ## 启发式合并

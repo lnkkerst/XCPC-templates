@@ -25,7 +25,9 @@ void solve() {
   };
 
   // 合并
-  auto merge = [&](int x, int y) { fa[find(x)] = find(y); };
+  auto merge = [&](int x, int y) {
+    fa[find(x)] = find(y);
+  };
 
   while (m--) {
     int q, x, y;

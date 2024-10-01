@@ -19,7 +19,7 @@ struct Tree {
   int cnt;
   vector<int> su, ls, rs, a;
 
-  Tree(int n) : cnt(0) {
+  Tree(int n): cnt(0) {
     n = (n + 1) << 5;
     su = ls = rs = a = vector<int>(n);
   };

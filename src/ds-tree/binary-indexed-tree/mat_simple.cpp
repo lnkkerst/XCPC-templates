@@ -17,9 +17,11 @@ struct Tree {
   vector<vector<int>> t;
   int n, m;
 
-  Tree(int _n, int _m) : n(_n), m(_m), t(_n + 2, vector<int>(_m + 2, 0)) {}
+  Tree(int _n, int _m): n(_n), m(_m), t(_n + 2, vector<int>(_m + 2, 0)) {}
 
-  static int lowbit(int x) { return x & -x; }
+  static int lowbit(int x) {
+    return x & -x;
+  }
 
   // 单点加
   void add(int x, int y, int v) {
@@ -57,8 +59,8 @@ void solve() {
 
   // 区间查询，维护原数组时使用
   auto queryRange = [&](int x1, int y1, int x2, int y2) {
-    return tr.query(x2, y2) - tr.query(x2, y1 - 1) - tr.query(x1 - 1, y2) +
-           tr.query(x1 - 1, y1 - 1);
+    return tr.query(x2, y2) - tr.query(x2, y1 - 1) - tr.query(x1 - 1, y2)
+           + tr.query(x1 - 1, y1 - 1);
   };
 
   for (int i = 1; i <= m; ++i) {

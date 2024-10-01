@@ -19,9 +19,13 @@ struct Treap {
   vector<int> p, sz, a, tag, ls, rs;
   int tot = 0, rt = 0;
 
-  Treap(int _n) { p = sz = a = tag = ls = rs = vector<int>(_n + 2); }
+  Treap(int _n) {
+    p = sz = a = tag = ls = rs = vector<int>(_n + 2);
+  }
 
-  void pushup(int u) { sz[u] = sz[ls[u]] + sz[rs[u]] + 1; }
+  void pushup(int u) {
+    sz[u] = sz[ls[u]] + sz[rs[u]] + 1;
+  }
 
   int newNode(int x) {
     a[++tot] = x, sz[tot] = 1, p[tot] = rand();

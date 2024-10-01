@@ -33,7 +33,9 @@ private:
     a[u] = 0;
   }
 
-  void pushup(int u) { sum[u] = sum[ls] + sum[rs]; }
+  void pushup(int u) {
+    sum[u] = sum[ls] + sum[rs];
+  }
 
   void add(int l, int r, int L, int R, int x, int u) {
     int len = r - l + 1;
@@ -74,11 +76,15 @@ private:
   }
 
 public:
-  Tree(int _n) : n(_n), a((_n + 2) * 4), sum((_n + 2) * 4) {}
+  Tree(int _n): n(_n), a((_n + 2) * 4), sum((_n + 2) * 4) {}
 
-  void add(int l, int r, int x) { return add(1, n, l, r, x, 1); }
+  void add(int l, int r, int x) {
+    return add(1, n, l, r, x, 1);
+  }
 
-  int query(int l, int r) { return query(1, n, l, r, 1); }
+  int query(int l, int r) {
+    return query(1, n, l, r, 1);
+  }
 
 #undef ls
 #undef rs

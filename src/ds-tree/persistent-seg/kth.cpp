@@ -18,7 +18,7 @@ using namespace std;
 struct Tree {
   int cnt;
   vector<int> su, ls, rs;
-  Tree(int n) : cnt(0) {
+  Tree(int n): cnt(0) {
     n = (n + 1) << 5;
     su = ls = rs = vector<int>(n);
   };

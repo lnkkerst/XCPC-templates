@@ -17,7 +17,7 @@ struct Tree {
   vector<int> a;
   int n;
 
-  Tree(int _n) : a(_n + 2), n(_n) {}
+  Tree(int _n): a(_n + 2), n(_n) {}
 
   void add(int pos, int val) {
     while (pos <= n) {

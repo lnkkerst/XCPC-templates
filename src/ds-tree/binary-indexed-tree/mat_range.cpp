@@ -18,7 +18,9 @@ private:
   vector<vector<int>> t1, t2, t3, t4;
   int n, m;
 
-  static int lowbit(int x) { return x & -x; }
+  static int lowbit(int x) {
+    return x & -x;
+  }
 
   // 单点加
   void add(int x, int y, int v) {
@@ -37,15 +39,15 @@ private:
     int res = 0;
     for (int i = x; i > 0; i -= lowbit(i)) {
       for (int j = y; j > 0; j -= lowbit(j)) {
-        res += (x + 1) * (y + 1) * t1[i][j] - (y + 1) * t2[i][j] -
-               (x + 1) * t3[i][j] + t4[i][j];
+        res += (x + 1) * (y + 1) * t1[i][j] - (y + 1) * t2[i][j]
+               - (x + 1) * t3[i][j] + t4[i][j];
       }
     }
     return res;
   }
 
 public:
-  Tree(int _n, int _m) : n(_n), m(_m) {
+  Tree(int _n, int _m): n(_n), m(_m) {
     t1 = t2 = t3 = t4 = vector<vector<int>>(_n + 2, vector<int>(_m + 2));
   }
 
@@ -59,8 +61,8 @@ public:
 
   // 子矩阵查询
   int queryRange(int x1, int y1, int x2, int y2) {
-    return query(x2, y2) - query(x2, y1 - 1) - query(x1 - 1, y2) +
-           query(x1 - 1, y1 - 1);
+    return query(x2, y2) - query(x2, y1 - 1) - query(x1 - 1, y2)
+           + query(x1 - 1, y1 - 1);
   }
 };
 

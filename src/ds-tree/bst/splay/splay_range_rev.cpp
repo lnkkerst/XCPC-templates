@@ -19,9 +19,13 @@ struct Splay {
   vector<int> fa, ls, rs, sz, rev;
   int rt;
 
-  Splay(int _n) { fa = ls = rs = sz = rev = vector<int>(_n + 10); }
+  Splay(int _n) {
+    fa = ls = rs = sz = rev = vector<int>(_n + 10);
+  }
 
-  void pushup(int u) { sz[u] = sz[ls[u]] + sz[rs[u]] + 1; }
+  void pushup(int u) {
+    sz[u] = sz[ls[u]] + sz[rs[u]] + 1;
+  }
 
   void pushdown(int u) {
     if (rev[u]) {
@@ -96,7 +100,9 @@ struct Splay {
     pushup(mid);
   }
 
-  auto build(int l, int r) { return build(l, r, rt); }
+  auto build(int l, int r) {
+    return build(l, r, rt);
+  }
 
   int query(int u, int x) {
     pushdown(u);
@@ -111,7 +117,9 @@ struct Splay {
     }
   }
 
-  auto query(int x) { return query(rt, x); }
+  auto query(int x) {
+    return query(rt, x);
+  }
 
   void reverse(int l, int r) {
     int x = query(rt, l), y = query(rt, r + 2);
