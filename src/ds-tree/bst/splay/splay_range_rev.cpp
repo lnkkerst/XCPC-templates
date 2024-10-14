@@ -15,6 +15,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 struct Splay {
   vector<int> fa, ls, rs, sz, rev;
   int rt;
@@ -145,6 +146,7 @@ void solve() {
     cout << tr.query(i) - 1 << ' ';
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

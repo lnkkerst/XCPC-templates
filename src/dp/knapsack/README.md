@@ -7,7 +7,7 @@
 [Luogu-P2871](https://www.luogu.com.cn/problem/P2871)
 
 ```cpp
-{{ #include 01.cpp:19:35 }}
+{{ #include 01.cpp:default }}
 ```
 
 ## 完全背包
@@ -15,7 +15,7 @@
 [Luogu-P1616](https://www.luogu.com.cn/problem/P1616)
 
 ```cpp
-{{ #include complete.cpp:19:35 }}
+{{ #include complete.cpp:default }}
 ```
 
 ## 多重背包
@@ -23,7 +23,7 @@
 [AcWing-5](https://www.acwing.com/problem/content/5/)
 
 ```cpp
-{{ #include multiple.cpp:20:46 }}
+{{ #include multiple.cpp:default }}
 ```
 
 ## 混合背包
@@ -31,7 +31,7 @@
 [Luogu-P1833](https://www.luogu.com.cn/problem/P1833) 按类型分别套用上面三种背包的代码即可。
 
 ```cpp
-{{ #include mix.cpp:19:75 }}
+{{ #include mix.cpp:default }}
 ```
 
 ## 二维费用背包
@@ -39,7 +39,7 @@
 [Luogu-P1855](https://www.luogu.com.cn/problem/P1855)
 
 ```cpp
-{{ #include 2d.cpp:19:37 }}
+{{ #include 2d.cpp:default }}
 ```
 
 ## 分组背包
@@ -51,7 +51,7 @@
 > 求背包能装载物品的最大总价值。
 
 ```cpp
-{{ #include group.cpp:19:41 }}
+{{ #include group.cpp:default }}
 ```
 
 可以转化成分组背包：有依赖的背包，把物品依赖的选择方案分到同一组。

@@ -3,7 +3,7 @@
 ## 有旋
 
 ```cpp
-{{ #include treap_rotate.cpp:20:214 }}
+{{ #include treap_rotate.cpp:default }}
 ```
 
 ## 无旋
@@ -13,5 +13,5 @@
 [Luogu-P3391](https://www.luogu.com.cn/problem/P3391)
 
 ```cpp
-{{ #include fhq_treap_range_reverse.cpp:18:116 }}
+{{ #include fhq_treap_range_reverse.cpp:default }}
 ```

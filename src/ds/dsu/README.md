@@ -3,13 +3,13 @@
 ## 简单版本
 
 ```cpp
-{{ #include simple.cpp:14:41 }}
+{{ #include simple.cpp:default }}
 ```
 
 ## 启发式合并
 
 ```cpp
-{{ #include union_by_rank.cpp:16:49 }}
+{{ #include union_by_rank.cpp:default }}
 ```
 
 ## 删除与移动
@@ -24,7 +24,7 @@
 3. 查询元素所在集合大小和元素和。
 
 ```cpp
-{{ #include remove_and_move.cpp:16:85 }}
+{{ #include remove_and_move.cpp:default }}
 ```
 
 <!-- TODO 带权并查集 -->

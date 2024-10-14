@@ -18,6 +18,7 @@ using namespace std;
 
 #define int long long
 
+// ANCHOR: default
 void solve() {
   int n, m;
   cin >> n >> m;
@@ -44,3 +45,4 @@ signed main() {
     solve();
   }
 }
+// ANCHOR_END: default

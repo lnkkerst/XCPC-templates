@@ -17,6 +17,7 @@ using namespace std;
 
 #define int long long
 
+// ANCHOR: default
 struct Tree {
 #define ls (u << 1)
 #define rs (u << 1 | 1)
@@ -113,6 +114,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

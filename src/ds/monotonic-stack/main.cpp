@@ -14,6 +14,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 void solve() {
   int n;
   cin >> n;
@@ -34,6 +35,7 @@ void solve() {
     cout << i + 1 << ' ';
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

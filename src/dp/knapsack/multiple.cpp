@@ -19,6 +19,7 @@ using namespace std;
 
 #define int long long
 
+// ANCHOR: default
 void solve() {
   int n, m;
   cin >> n >> m;
@@ -44,6 +45,7 @@ void solve() {
   }
   cout << dp[m] << endl;
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

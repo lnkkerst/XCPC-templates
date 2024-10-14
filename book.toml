@@ -19,7 +19,7 @@ playground = { line-numbers = true }
 git-repository-url = "https://github.com/lnkkerst/XCPC-templates"
 print = { page-break = false }
 
-[output.linkcheck]
+# [output.linkcheck]
 
 [preprocessor.katex]
 after = ["links"]

@@ -38,6 +38,7 @@ void write(int x) {
   putchar(x % 10 + '0');
 }
 
+// ANCHOR: default
 void solve() {
   int n = read(), m = read();
   vector<int> a(n);
@@ -59,6 +60,7 @@ void solve() {
     putchar('\n');
   }
 }
+// ANCHOR_END: default
 
 int main() {
   int t;

@@ -13,6 +13,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 void solve() {
   int n, m;
   cin >> n >> m;
@@ -47,6 +48,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

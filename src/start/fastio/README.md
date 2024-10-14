@@ -5,17 +5,17 @@
 ## 简单版本
 
 ```cpp
-{{ #include main.cpp:13:38 }}
+{{ #include main.cpp:default }}
 ```
 
 ## `fread`, `fwrite` 版本
 
 ```cpp
-{{ #include fio.cpp:4: }}
+{{ #include fio.cpp:default }}
 ```
 
 ## 完整带调试版
 
 ```cpp
-{{ #include full.cpp:3: }}
+{{ #include full.cpp:default }}
 ```

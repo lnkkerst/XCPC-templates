@@ -15,6 +15,7 @@ using namespace std;
 
 #define int long long
 
+// ANCHOR: default
 void solve() {
   int n, m;
   if (!(cin >> n >> m)) {
@@ -83,6 +84,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

@@ -1,5 +1,6 @@
 #include <cstdio>
 
+// ANCHOR: default
 // #define DEBUG 1  // 调试开关
 struct IO {
 #define MAXSIZE (1 << 20)
@@ -98,3 +99,4 @@ struct IO {
     write(x), push(lastChar);
   }
 } io;
+// ANCHOR_END: default

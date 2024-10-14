@@ -15,6 +15,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR:default
 // 权值线段树
 struct Tree {
 #define ls getLs(u)
@@ -150,6 +151,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

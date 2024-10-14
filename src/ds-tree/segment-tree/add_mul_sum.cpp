@@ -17,6 +17,7 @@ using namespace std;
 
 #define int long long
 
+// ANCHOR: default
 int mod;
 
 struct Tree {
@@ -168,6 +169,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

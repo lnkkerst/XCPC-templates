@@ -33,5 +33,5 @@ $w(l, r)$ 需满足的条件：
 [CF321E](https://codeforces.com/contest/321/problem/E)：
 
 ```cpp
-{{ #include cf321e.cpp:121:167}}
+{{ #include cf321e.cpp:default }}
 ```

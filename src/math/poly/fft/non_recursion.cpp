@@ -17,6 +17,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 // 看不懂，当黑盒
 struct FFT {
   vector<complex<double>> f;
@@ -113,6 +114,7 @@ void solve() {
   }
   cout << endl;
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

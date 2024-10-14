@@ -18,6 +18,7 @@ using namespace std;
 
 #define int long long
 
+// ANCHOR: default
 void solve() {
   int n, m;
   cin >> m >> n;
@@ -33,6 +34,7 @@ void solve() {
   }
   cout << *max_element(dp.begin() + 1, dp.end()) << endl;
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

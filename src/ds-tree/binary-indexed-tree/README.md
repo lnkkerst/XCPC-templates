@@ -8,7 +8,7 @@
 - 可差分：具有逆运算的运算，即已知 $x \circ y$ 和 $x$ 可以求出 $y$ 。
 
 ```cpp
-{{ #include simple.cpp:16:59 }}
+{{ #include simple.cpp:default }}
 ```
 
 ## 区间加，单点查询。
@@ -16,13 +16,13 @@
 维护差分数组即可。
 
 ```cpp
-{{ #include diff.cpp:16:63 }}
+{{ #include diff.cpp:default }}
 ```
 
 ## 区间加，区间和。
 
 ```cpp
-{{ #include range_add_query.cpp:16:82 }}
+{{ #include range_add_query.cpp:default }}
 ```
 
 ## 二维，子矩阵加，单点查询
@@ -34,7 +34,7 @@
 没有经过严格测试。
 
 ```cpp
-{{ #include mat_simple.cpp:16:79 }}
+{{ #include mat_simple.cpp:default }}
 ```
 
 ## 二维，子矩阵加，子矩阵查询
@@ -44,7 +44,7 @@
 没有经过严格测试。
 
 ```cpp
-{{ #include mat_range.cpp:16:87 }}
+{{ #include mat_range.cpp:default }}
 ```
 
 ## 权值树状数组

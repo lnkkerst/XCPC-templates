@@ -3,7 +3,7 @@
 ## 二叉堆
 
 ```cpp
-{{ #include main.cpp:13:62 }}
+{{ #include main.cpp:default }}
 ```
 
 ## 对顶堆
@@ -15,5 +15,5 @@
 数据范围 $10^5$。
 
 ```cpp
-{{ #include kth_heap.cpp:14:55 }}
+{{ #include kth_heap.cpp:default }}
 ```

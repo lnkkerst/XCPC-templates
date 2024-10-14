@@ -11,6 +11,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 void solve() {
   int x;
   priority_queue<int> lq;
@@ -53,6 +54,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 int main() {
   int t;

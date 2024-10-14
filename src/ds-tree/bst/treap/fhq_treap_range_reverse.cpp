@@ -15,6 +15,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 struct Treap {
   vector<int> p, sz, a, tag, ls, rs;
   int tot = 0, rt = 0;
@@ -114,6 +115,7 @@ void solve() {
   }
   tr.dfs(tr.rt);
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

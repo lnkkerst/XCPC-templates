@@ -13,6 +13,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 struct Tree {
   vector<int> a;
   int n;
@@ -61,6 +62,7 @@ void solve() {
     }
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

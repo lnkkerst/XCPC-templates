@@ -13,6 +13,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 void solve() {
   int n, k;
   cin >> n >> k;
@@ -45,6 +46,7 @@ void solve() {
   calc(less_equal<>());    // 最小值
   calc(greater_equal<>()); // 最大值
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

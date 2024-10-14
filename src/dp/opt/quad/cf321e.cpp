@@ -118,6 +118,7 @@ struct IO {
   }
 } io;
 
+// ANCHOR: default
 void solve() {
   int n, m;
   io.read(n);
@@ -165,6 +166,7 @@ void solve() {
   }
   io.write(dp[n][m]);
 }
+// ANCHOR_END: default
 
 signed main() {
   // ios::sync_with_stdio(false);

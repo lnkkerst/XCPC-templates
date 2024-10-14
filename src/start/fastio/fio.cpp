@@ -1,6 +1,7 @@
 #include <cctype>
 #include <cstdio>
 
+// ANCHOR:default
 namespace IO {
 const int MAXSIZE = 1 << 20;
 char buf[MAXSIZE], *p1, *p2;
@@ -44,3 +45,4 @@ void write(int x) {
   }
 }
 } // namespace IO
+// ANCHOR_END: default

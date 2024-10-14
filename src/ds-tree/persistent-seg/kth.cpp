@@ -15,6 +15,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 struct Tree {
   int cnt;
   vector<int> su, ls, rs;
@@ -85,6 +86,7 @@ void solve() {
     cout << b[pos - 1] << endl;
   }
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

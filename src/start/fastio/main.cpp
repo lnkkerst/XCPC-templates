@@ -10,6 +10,7 @@
 #include <vector>
 using namespace std;
 
+// ANCHOR: default
 int read() {
   int x = 0, f = 1;
   char ch = 0;
@@ -36,3 +37,4 @@ void write(int x) {
   }
   putchar(x % 10 + '0');
 }
+// ANCHOR_END: default

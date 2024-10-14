@@ -5,7 +5,7 @@
 [Luogu-P3372](https://www.luogu.com.cn/problem/P3372)
 
 ```cpp
-{{ #include simple_add_sum.cpp:18:115 }}
+{{ #include simple_add_sum.cpp:default }}
 ```
 
 ## 区间加，区间乘，区间求和
@@ -13,7 +13,7 @@
 [Luogu-P3373](https://www.luogu.com.cn/problem/P3373)
 
 ```cpp
-{{ #include add_mul_sum.cpp:18:170 }}
+{{ #include add_mul_sum.cpp:default }}
 ```
 
 ## 区间加，区间求和，动态开点
@@ -32,7 +32,7 @@
 6. 求 $x$ 的后继(后继定义为大于 $x$，且最小的数)
 
 ```cpp
-{{ #include add_sum_dyno.cpp:18:152 }}
+{{ #include add_sum_dyno.cpp:default }}
 ```
 
 ## 线段树合并
