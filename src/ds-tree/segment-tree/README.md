@@ -8,6 +8,12 @@
 {{ #include simple_add_sum.cpp:default }}
 ```
 
+## 区间加，区间最大（小）值
+
+```cpp
+{{ #include add_max.cpp:default }}
+```
+
 ## 区间加，区间乘，区间求和
 
 [Luogu-P3373](https://www.luogu.com.cn/problem/P3373)

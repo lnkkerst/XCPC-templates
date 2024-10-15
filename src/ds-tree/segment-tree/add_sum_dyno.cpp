@@ -18,8 +18,8 @@ using namespace std;
 // ANCHOR:default
 // 权值线段树
 struct Tree {
-#define ls getLs(u)
-#define rs getRs(u)
+#define ls get_ls(u)
+#define rs get_rs(u)
 
 private:
   // n 是最多元素总数，[mi, ma] 是值域
@@ -29,14 +29,14 @@ private:
   vector<int> lson, rson;
   int cnt = 1;
 
-  int getLs(int u) {
+  int get_ls(int u) {
     if (!lson[u]) {
       lson[u] = ++cnt;
     }
     return lson[u];
   }
 
-  int getRs(int u) {
+  int get_rs(int u) {
     if (!rson[u]) {
       rson[u] = ++cnt;
     }

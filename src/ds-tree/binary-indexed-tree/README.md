@@ -33,9 +33,7 @@
 
 ## 二维，子矩阵加，子矩阵查询
 
-[POJ-2155](http://poj.org/problem?id=2155)
-
-没有经过严格测试。
+[LOJ-135](https://loj.ac/p/135)
 
 ```cpp
 {{ #include mat_range.cpp:default }}
