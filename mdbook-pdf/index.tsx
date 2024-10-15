@@ -17,7 +17,7 @@ import type { RenderContext } from "./types/RenderContext";
 import type { Book } from "./types/Book";
 import type { BookItem } from "./types/BookItem";
 import { merge } from "lodash-es";
-import { Fragment } from "react";
+import { Fragment as Frag } from "react";
 
 type OutlineItem = {
   title: string;
@@ -301,7 +301,7 @@ async function generateToc(outlines: OutlineCategory[], opts: Options["toc"]) {
     return (
       <View style={{ paddingLeft: showPaddingLeft ? paddingLeft : undefined }}>
         {items.map(item => (
-          <Fragment key={item.title}>
+          <Frag key={item.title}>
             <TocItem title={item.title} page={item.page}></TocItem>
             {item.subItems.length !== 0 && (
               <RecursiveTocItems
@@ -310,7 +310,7 @@ async function generateToc(outlines: OutlineCategory[], opts: Options["toc"]) {
                 showPaddingLeft
               ></RecursiveTocItems>
             )}
-          </Fragment>
+          </Frag>
         ))}
       </View>
     );
@@ -327,7 +327,7 @@ async function generateToc(outlines: OutlineCategory[], opts: Options["toc"]) {
           style={styles.page}
         >
           {toc.map(category => (
-            <Fragment key={JSON.stringify(category.partTitle)}>
+            <Frag key={JSON.stringify(category.partTitle)}>
               {category.partTitle && (
                 <TocItem
                   title={category.partTitle}
@@ -339,7 +339,7 @@ async function generateToc(outlines: OutlineCategory[], opts: Options["toc"]) {
                 paddingLeft={"12pt"}
                 showPaddingLeft={!!category.partTitle}
               ></RecursiveTocItems>
-            </Fragment>
+            </Frag>
           ))}
         </Page>
       </Document>
