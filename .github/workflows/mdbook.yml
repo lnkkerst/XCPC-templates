@@ -33,7 +33,7 @@ jobs:
       - uses: cargo-bins/cargo-binstall@main
       - uses: oven-sh/setup-bun@v2
         with:
-          bun-version: 1.1.27
+          bun-version: 1.1.30
       - name: Install mdBook and dependencies
         run: "./install-deps.sh"
       - name: Setup Pages
