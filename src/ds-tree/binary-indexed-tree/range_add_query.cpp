@@ -21,10 +21,10 @@ private:
   vector<int> t1, t2;
   int n;
 
-  void add_(int k, int v) {
-    int v1 = k * v;
+  void add_(int k, int x) {
+    int v1 = k * x;
     while (k <= n) {
-      t1[k] += v, t2[k] += v1;
+      t1[k] += x, t2[k] += v1;
       k += lowbit(k);
     }
   }

@@ -13,6 +13,8 @@
 #include <vector>
 using namespace std;
 
+#define int long long
+
 // ANCHOR: default
 struct Tree {
 private:
@@ -70,19 +72,19 @@ public:
 void solve() {
   int n, m;
   cin >> n >> m;
-  Tree tr(n, m);
+  Tree tree(n, m);
 
-  for (int i = 1; i <= m; ++i) {
-    char op;
-    cin >> op;
-    if (op == 'C') {
+  int op;
+  while (cin >> op) {
+
+    if (op == 1) {
+      int x1, y1, x2, y2, k;
+      cin >> x1 >> y1 >> x2 >> y2 >> k;
+      tree.addRange(x1, y1, x2, y2, k);
+    } else if (op == 2) {
       int x1, y1, x2, y2;
       cin >> x1 >> y1 >> x2 >> y2;
-      tr.addRange(x1, y1, x2, y2, 1);
-    } else if (op == 'Q') {
-      int x, y;
-      cin >> x >> y;
-      cout << tr.queryRange(x, y, x, y) % 2 << endl;
+      cout << tree.queryRange(x1, y1, x2, y2) << endl;
     }
   }
 }
@@ -92,8 +94,7 @@ signed main() {
   ios::sync_with_stdio(false);
   cin.tie(nullptr);
   cout.tie(nullptr);
-  int t;
-  cin >> t;
+  int t = 1;
   while (t--) {
     solve();
   }

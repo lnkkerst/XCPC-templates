@@ -1,3 +1,9 @@
+# Ignore all extension-less files
+*
+!/**/
+!*.*
+!.*
+
 book
 
 *.out

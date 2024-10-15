@@ -40,11 +40,11 @@ struct Tree {
 void solve() {
   int n, m;
   cin >> n >> m;
-  Tree tr(n);
+  Tree tree(n);
   for (int last = 0, i = 1; i <= n; ++i) {
     int x;
     cin >> x;
-    tr.add(i, x - last);
+    tree.add(i, x - last);
     last = x;
   }
   while (m--) {
@@ -53,12 +53,12 @@ void solve() {
     if (q == 1) {
       int l, r, x;
       cin >> l >> r >> x;
-      tr.add(l, x);
-      tr.add(r + 1, -x);
+      tree.add(l, x);
+      tree.add(r + 1, -x);
     } else if (q == 2) {
       int pos;
       cin >> pos;
-      cout << tr.query(pos) << endl;
+      cout << tree.query(pos) << endl;
     }
   }
 }

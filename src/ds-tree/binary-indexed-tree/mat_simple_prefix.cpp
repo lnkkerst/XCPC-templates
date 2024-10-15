@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief https://loj.ac/p/133
+ * @brief https://loj.ac/p/134
  */
 
 #pragma GCC optimize(2)
@@ -75,13 +75,13 @@ void solve() {
 
   while (cin >> op) {
     if (op == 1) {
-      int x, y, k;
-      cin >> x >> y >> k;
-      tree.add(x, y, k);
+      int x1, y1, x2, y2, k;
+      cin >> x1 >> y1 >> x2 >> y2 >> k;
+      addRange(x1, y1, x2, y2, k);
     } else if (op == 2) {
-      int x1, y1, x2, y2;
-      cin >> x1 >> y1 >> x2 >> y2;
-      cout << queryRange(x1, y1, x2, y2) << endl;
+      int x, y;
+      cin >> x >> y;
+      cout << tree.query(x, y) << endl;
     }
   }
 }

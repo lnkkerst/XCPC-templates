@@ -15,10 +15,6 @@
 
 维护差分数组即可。
 
-```cpp
-{{ #include diff.cpp:default }}
-```
-
 ## 区间加，区间和。
 
 ```cpp
@@ -29,9 +25,7 @@
 
 改一改就是单点修改，子矩阵查询了。
 
-[POJ-2155](http://poj.org/problem?id=2155)
-
-没有经过严格测试。
+[LOJ-133](https://loj.ac/p/133)
 
 ```cpp
 {{ #include mat_simple.cpp:default }}
