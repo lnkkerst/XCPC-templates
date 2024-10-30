@@ -30,7 +30,6 @@ auto create_nd_vector(T value, size_t first, Sizes... sizes) {
   return std::vector<decltype(create_nd_vector<T>(value, sizes...))>(
     first, create_nd_vector<T>(value, sizes...));
 }
-// ANCHOR_END: default
 
 void solve() {
   int n;
@@ -39,6 +38,7 @@ void solve() {
   auto b = create_nd_vector<int>(n + 1, n + 1, n + 1, n + 1);
   cout << typeid(b).name() << endl;
 }
+// ANCHOR_END: default
 
 signed main() {
   ios::sync_with_stdio(false);

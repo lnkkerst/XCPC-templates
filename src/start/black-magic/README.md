@@ -18,6 +18,8 @@
 
 ## “动态”的 `std::bitset`
 
+**需要 C++14 及以上**
+
 来自
 [CF1856E2](https://codeforces.com/contest/1856/problem/E2)，
 利用模板展开预定义大小为 $2^k$ 的函数。
