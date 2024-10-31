@@ -53,3 +53,9 @@
 - [状压 DP](./dp/state/README.md)
 - [DP 优化](./dp/opt/README.md)
   - [四边形不等式优化](./dp/opt/quad/README.md)
+
+---
+
+# 图论
+
+- [虚树](./graph/virtual-tree/README.md)
