@@ -7,6 +7,7 @@
 # 开始
 
 - [起手式](start/starting/README.md)
+- [Vim](start/vim/README.md)
 - [快读快写](start/fastio/README.md)
 - [黑魔法](start/black-magic/README.md)
 - [对拍](start/validator/README.md)
