@@ -97,3 +97,10 @@ vnoremap L g_
 " 在下方打开一个终端
 :belowright terminal
 ```
+
+```bash
+# bash 指令
+
+# X 下交换 esc 和 capslock，防止队友写代码
+setxkbmap -option "caps:swapescape"
+```

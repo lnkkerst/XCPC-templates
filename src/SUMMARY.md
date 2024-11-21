@@ -60,3 +60,9 @@
 # 图论
 
 - [虚树](./graph/virtual-tree/README.md)
+
+---
+
+# 杂项
+
+- [自带取模类型](./misc/types-with-mod/README.md)
