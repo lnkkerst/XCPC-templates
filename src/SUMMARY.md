@@ -11,6 +11,7 @@
 - [快读快写](start/fastio/README.md)
 - [黑魔法](start/black-magic/README.md)
 - [对拍](start/validator/README.md)
+- [Python 相关](start/python/README.md)
 
 ---
 
