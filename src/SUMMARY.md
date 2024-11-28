@@ -64,6 +64,12 @@
 
 ---
 
+# 字符串
+
+- [Manacher](./string/manacher/README.md)
+
+---
+
 # 杂项
 
 - [自带取模类型](./misc/types-with-mod/README.md)
